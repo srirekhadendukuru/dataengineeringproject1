@@ -1473,6 +1473,114 @@
 						"Source": {
 							"Type": "SPARK"
 						}
+					},
+					{
+						"ActionType": "CREATE",
+						"OldEntity": null,
+						"NewEntity": {
+							"Name": "relationship-efixmgkvbh",
+							"EntityType": "RELATIONSHIP",
+							"Namespace": {
+								"DatabaseName": "projectdb"
+							},
+							"Origin": {
+								"Type": "SPARK"
+							},
+							"FromTableName": "atheletes",
+							"ToTableName": "coaches",
+							"ColumnRelationshipInformations": [
+								{
+									"FromColumnName": "Country",
+									"ToColumnName": "Country"
+								}
+							],
+							"RelationshipType": 0,
+							"Properties": {}
+						},
+						"Source": {
+							"Type": "SPARK"
+						}
+					},
+					{
+						"ActionType": "CREATE",
+						"OldEntity": null,
+						"NewEntity": {
+							"Name": "relationship-jeokmbrabm",
+							"EntityType": "RELATIONSHIP",
+							"Namespace": {
+								"DatabaseName": "projectdb"
+							},
+							"Origin": {
+								"Type": "SPARK"
+							},
+							"FromTableName": "coaches",
+							"ToTableName": "entriesgender",
+							"ColumnRelationshipInformations": [
+								{
+									"FromColumnName": "Discipline",
+									"ToColumnName": "Discipline"
+								}
+							],
+							"RelationshipType": 0,
+							"Properties": {}
+						},
+						"Source": {
+							"Type": "SPARK"
+						}
+					},
+					{
+						"ActionType": "CREATE",
+						"OldEntity": null,
+						"NewEntity": {
+							"Name": "relationship-nhgbqiwujp",
+							"EntityType": "RELATIONSHIP",
+							"Namespace": {
+								"DatabaseName": "projectdb"
+							},
+							"Origin": {
+								"Type": "SPARK"
+							},
+							"FromTableName": "entriesgender",
+							"ToTableName": "teams",
+							"ColumnRelationshipInformations": [
+								{
+									"FromColumnName": "Discipline",
+									"ToColumnName": "Discipline"
+								}
+							],
+							"RelationshipType": 0,
+							"Properties": {}
+						},
+						"Source": {
+							"Type": "SPARK"
+						}
+					},
+					{
+						"ActionType": "CREATE",
+						"OldEntity": null,
+						"NewEntity": {
+							"Name": "relationship-ygjjgkgdjd",
+							"EntityType": "RELATIONSHIP",
+							"Namespace": {
+								"DatabaseName": "projectdb"
+							},
+							"Origin": {
+								"Type": "SPARK"
+							},
+							"FromTableName": "medals",
+							"ToTableName": "teams",
+							"ColumnRelationshipInformations": [
+								{
+									"FromColumnName": "Team_Country",
+									"ToColumnName": "Country"
+								}
+							],
+							"RelationshipType": 0,
+							"Properties": {}
+						},
+						"Source": {
+							"Type": "SPARK"
+						}
 					}
 				]
 			},
