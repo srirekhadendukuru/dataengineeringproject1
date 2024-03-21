@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "rekhasdf"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://projectcontainer0321.dfs.core.windows.net/"
+		},
+		"coacheshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Coaches.csv"
+		},
+		"entrieshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/EntriesGender.csv"
+		},
+		"firsthttpfileathelete_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Athletes.csv"
+		},
+		"medalshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Medals.csv"
+		},
+		"teamhttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Teams.csv"
+		}
+	}
+}
