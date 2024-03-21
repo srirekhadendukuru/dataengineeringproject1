@@ -1,0 +1,23 @@
+{
+	"name": "relationship-ygjjgkgdjd",
+	"properties": {
+		"Name": "relationship-ygjjgkgdjd",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "projectdb"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "medals",
+		"ToTableName": "teams",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "Team_Country",
+				"ToColumnName": "Country"
+			}
+		],
+		"RelationshipType": 0
+	},
+	"type": "RELATIONSHIP"
+}

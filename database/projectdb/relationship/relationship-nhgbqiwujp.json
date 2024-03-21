@@ -1,0 +1,23 @@
+{
+	"name": "relationship-nhgbqiwujp",
+	"properties": {
+		"Name": "relationship-nhgbqiwujp",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "projectdb"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "entriesgender",
+		"ToTableName": "teams",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "Discipline",
+				"ToColumnName": "Discipline"
+			}
+		],
+		"RelationshipType": 0
+	},
+	"type": "RELATIONSHIP"
+}

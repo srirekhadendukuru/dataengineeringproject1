@@ -1,0 +1,23 @@
+{
+	"name": "relationship-jeokmbrabm",
+	"properties": {
+		"Name": "relationship-jeokmbrabm",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "projectdb"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "coaches",
+		"ToTableName": "entriesgender",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "Discipline",
+				"ToColumnName": "Discipline"
+			}
+		],
+		"RelationshipType": 0
+	},
+	"type": "RELATIONSHIP"
+}

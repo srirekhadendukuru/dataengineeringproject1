@@ -1,0 +1,23 @@
+{
+	"name": "relationship-efixmgkvbh",
+	"properties": {
+		"Name": "relationship-efixmgkvbh",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "projectdb"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "atheletes",
+		"ToTableName": "coaches",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "Country",
+				"ToColumnName": "Country"
+			}
+		],
+		"RelationshipType": 0
+	},
+	"type": "RELATIONSHIP"
+}
