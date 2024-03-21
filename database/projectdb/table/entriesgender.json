@@ -1,7 +1,7 @@
 {
-	"name": "atheletes",
+	"name": "entriesgender",
 	"properties": {
-		"Name": "atheletes",
+		"Name": "entriesgender",
 		"EntityType": "TABLE",
 		"Namespace": {
 			"DatabaseName": "projectdb"
@@ -14,32 +14,6 @@
 		"StorageDescriptor": {
 			"Columns": [
 				{
-					"Name": "PersonName",
-					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
-						"IsNullable": true,
-						"Length": 8000,
-						"Properties": {
-							"HIVE_TYPE_STRING": "string"
-						}
-					},
-					"DeltaFormatInvalidMessages": []
-				},
-				{
-					"Name": "Country",
-					"OriginDataTypeName": {
-						"TypeName": "string",
-						"IsComplexType": false,
-						"IsNullable": true,
-						"Length": 8000,
-						"Properties": {
-							"HIVE_TYPE_STRING": "string"
-						}
-					},
-					"DeltaFormatInvalidMessages": []
-				},
-				{
 					"Name": "Discipline",
 					"OriginDataTypeName": {
 						"TypeName": "string",
@@ -51,6 +25,42 @@
 						}
 					},
 					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "Female",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "Male",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "Total",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
 				}
 			],
 			"Format": {
@@ -59,7 +69,7 @@
 				"FormatType": "csv",
 				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
 				"Properties": {
-					"path": "abfss://data@projectcontainer0321.dfs.core.windows.net/transformeddata/atheletes/part-00000-tid-3979362742586428895-e6b540e7-22e7-4aad-ab88-f05ea3fbcd26-22-1-c000.csv",
+					"path": "abfss://data@projectcontainer0321.dfs.core.windows.net/transformeddata/entriesgender/part-00000-tid-3172016116400680811-b8d0d6ae-265c-4129-8e3d-5a5f9598ce76-24-1-c000.csv",
 					"delimiter": ",",
 					"multiLine": "false",
 					"firstRowAsHeader": "true",
@@ -70,15 +80,15 @@
 			},
 			"Source": {
 				"Provider": "ADLS",
-				"Location": "abfss://data@projectcontainer0321.dfs.core.windows.net/transformeddata/atheletes/part-00000-tid-3979362742586428895-e6b540e7-22e7-4aad-ab88-f05ea3fbcd26-22-1-c000.csv",
+				"Location": "abfss://data@projectcontainer0321.dfs.core.windows.net/transformeddata/entriesgender/part-00000-tid-3172016116400680811-b8d0d6ae-265c-4129-8e3d-5a5f9598ce76-24-1-c000.csv",
 				"Properties": {
-					"LinkedServiceName": "AzureDataLakeStorage1",
+					"LinkedServiceName": "projectsynapse0321-WorkspaceDefaultStorage",
 					"LocationSetToDatabaseDefault": false
 				}
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"compression": "",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,

@@ -1,7 +1,7 @@
 {
-	"name": "atheletes",
+	"name": "coaches",
 	"properties": {
-		"Name": "atheletes",
+		"Name": "coaches",
 		"EntityType": "TABLE",
 		"Namespace": {
 			"DatabaseName": "projectdb"
@@ -14,7 +14,7 @@
 		"StorageDescriptor": {
 			"Columns": [
 				{
-					"Name": "PersonName",
+					"Name": "Name",
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -51,6 +51,19 @@
 						}
 					},
 					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "Event",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 8000,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
 				}
 			],
 			"Format": {
@@ -59,7 +72,7 @@
 				"FormatType": "csv",
 				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
 				"Properties": {
-					"path": "abfss://data@projectcontainer0321.dfs.core.windows.net/transformeddata/atheletes/part-00000-tid-3979362742586428895-e6b540e7-22e7-4aad-ab88-f05ea3fbcd26-22-1-c000.csv",
+					"path": "abfss://data@projectcontainer0321.dfs.core.windows.net/transformeddata/coaches/part-00000-tid-4880137451512272518-b6748a05-4314-4797-9771-f02d56e1cb14-23-1-c000.csv",
 					"delimiter": ",",
 					"multiLine": "false",
 					"firstRowAsHeader": "true",
@@ -70,15 +83,15 @@
 			},
 			"Source": {
 				"Provider": "ADLS",
-				"Location": "abfss://data@projectcontainer0321.dfs.core.windows.net/transformeddata/atheletes/part-00000-tid-3979362742586428895-e6b540e7-22e7-4aad-ab88-f05ea3fbcd26-22-1-c000.csv",
+				"Location": "abfss://data@projectcontainer0321.dfs.core.windows.net/transformeddata/coaches/part-00000-tid-4880137451512272518-b6748a05-4314-4797-9771-f02d56e1cb14-23-1-c000.csv",
 				"Properties": {
-					"LinkedServiceName": "AzureDataLakeStorage1",
+					"LinkedServiceName": "projectsynapse0321-WorkspaceDefaultStorage",
 					"LocationSetToDatabaseDefault": false
 				}
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"compression": "",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
