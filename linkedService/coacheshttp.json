@@ -1,0 +1,12 @@
+{
+	"name": "coacheshttp",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Coaches.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
