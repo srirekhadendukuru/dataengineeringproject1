@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "projectsynapse0321"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"projectsynapse0321-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:projectsynapse0321.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://projectcontainer0321.dfs.core.windows.net/"
+		},
+		"coacheshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Coaches.csv"
+		},
+		"entrieshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/EntriesGender.csv"
+		},
+		"firsthttpfileathelete_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Athletes.csv"
+		},
+		"medalshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Medals.csv"
+		},
+		"projectsynapse0321-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://projectcontainer0321.dfs.core.windows.net"
+		},
+		"teamhttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/srirekhadendukuru/dataengineeringproject1/main/Data/Teams.csv"
+		}
+	}
+}
