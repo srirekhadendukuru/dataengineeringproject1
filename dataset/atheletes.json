@@ -1,0 +1,21 @@
+{
+	"name": "atheletes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "firsthttpfileathelete",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
