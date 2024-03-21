@@ -1,0 +1,22 @@
+{
+	"name": "projectdb",
+	"properties": {
+		"Name": "projectdb",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://data@projectcontainer0321.dfs.core.windows.net/projectdb",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "AzureDataLakeStorage1"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
